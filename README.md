@@ -2,6 +2,16 @@
 
 This vsCode extenstion all you to tranform the selected text by your cursor to the preferred case by using keyboard shortcuts.
 
+## Installation
+
+Search **caseTransformer** in the VS Code Extensions tab.
+
+If it doesn't appear, install manually via terminal:
+```bash
+code --install-extension casetransformer-0.0.1.vsix
+```
+Download the `.vsix` from the [Releases](https://github.com/VIKRAM2605/text-transformer-vscode-extention/releases) page first.
+
 ## The Reason I made This
 Yeah, I got tired of changing the text word by word and one day my teacher when i am trying to edit a ms doc he pointed out there is the tool that ms word offers to change the case and i never knew and so it got struck in my mind so boom i made it here.
 Camel Case and Snake Case needs a complex alogorithm i thought it will be small but man it is too big and i need more time.
