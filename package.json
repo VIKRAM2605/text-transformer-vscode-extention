@@ -1,0 +1,60 @@
+{
+  "name": "casetransformer",
+  "displayName": "caseTransformer",
+  "description": "Transform the selected case to a different one.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.116.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "casetransformer.TOUPPERCASE",
+        "title": "TO UPPER CASE"
+      },
+      {
+        "command": "casetransformer.tolowercase",
+        "title": "to lower case"
+      },
+      {
+        "command": "casetransformer.toTitleCase",
+        "title": "To Title Case"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "casetransformer.TOUPPERCASE",
+        "key": "ctrl+shift+u",
+        "when": "editorTextFocus && editorHasSelection"
+      },
+      {
+        "command": "casetransformer.tolowercase",
+        "key": "ctrl+shift+l",
+        "when": "editorTextFocus && editorHasSelection"
+      },
+      {
+        "command": "casetransformer.toTitleCase",
+        "key": "ctrl+shift+t",
+        "when": "editorTextFocus && editorHasSelection"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.116.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
