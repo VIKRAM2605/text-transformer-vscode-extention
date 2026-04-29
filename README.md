@@ -1,65 +1,35 @@
 # casetransformer README
 
-This is the README for your extension "casetransformer". After writing up a brief description, we recommend including the following sections.
+This vsCode extenstion all you to tranform the selected text by your cursor to the preferred case by using keyboard shortcuts.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Supported Cases
+- **UPPER CASE** -> `HELLO WORLD`
+- **lower case** -> `hello world`
+- **Title Case** -> `Hello World`
+- *(Will add camel case and snake case soon using complex algorithm to differentiate between a selected text by spitting them until all the spitted words make sense.)*
 
-For example if there is an image subfolder under your extension project workspace:
+### How To Use
+1. Selected any text in the editor.
+2. Press the keyboard shortcut for the case you want.
+3. The text is transformed to the end case.
 
-\!\[feature X\]\(images/feature-x.png\)
+### Keyboard Shortcuts
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+| Case | Shortcut |
+|---|---|
+|UPPER CASE | `CTRL+SHIFT+U`|
+|lower case|`CTRL+SHIFT+L`|
+|Title Case|`CTRL+SHIFT+T`|
 
-## Requirements
+### Title Case Separators
+Title Case only works when there is a separator.
+The separators can be any one of the following:
+- Space -> `hello world` -> `Hello World`
+- Underscore -> `hello_world`->`Hello World`
+- Hyphen -> `hello-world` -> `Hello World`
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## Known Issue
+- Title Case requires a separator character (space, underscore, hyphen)
+- No support for camelCase and snake_case as it requires a complex algorithm to match up words. Will add it in future.
