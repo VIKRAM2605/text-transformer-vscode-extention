@@ -3,6 +3,11 @@
   "displayName": "caseTransformer",
   "description": "Transform the selected case to a different one.",
   "version": "0.0.1",
+  "publisher": "VIKRAMSURESH",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VIKRAM2605/text-transformer-vscode-extention"
+  },
   "engines": {
     "vscode": "^1.116.0"
   },
