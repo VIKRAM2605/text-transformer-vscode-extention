@@ -1,4 +1,4 @@
-# casetransformer README
+# Case Transformer
 
 This vsCode extenstion all you to tranform the selected text by your cursor to the preferred case by using keyboard shortcuts.
 
